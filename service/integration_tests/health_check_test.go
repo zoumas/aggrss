@@ -6,6 +6,8 @@ import (
 )
 
 func TestHealthCheck(t *testing.T) {
+  // Testing the respondWithJSON function.
+
 	resp, err := c.Get(srv.URL + "/v1/healthz")
 	if err != nil {
 		t.Fatal(err)

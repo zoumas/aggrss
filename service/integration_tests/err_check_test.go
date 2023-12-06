@@ -6,6 +6,8 @@ import (
 )
 
 func TestErrCheck(t *testing.T) {
+  // Testing the respondWithError function.
+
 	resp, err := c.Get(srv.URL + "/v1/err")
 	if err != nil {
 		t.Fatal(err)
